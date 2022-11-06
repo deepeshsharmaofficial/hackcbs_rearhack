@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Investify</title>
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/4f09bb708e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section class="colored-section" id="title">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./Images/logo.png"
+              alt=""
+              width="40"
+              class="d-inline-block align-text-top"
+            />
+            Investify
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto"></ul>
+          </div>
+        </nav>
+
+        <!-- Title -->
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="big-heading">
+              Do you want to be a Proud Invester or a looser bettor
+            </h1>
+          </div>
+          <div class="col-lg-6 image-home-page">
+            <img
+              class="title-img"
+              src="./Images/Jan-Business_report_1.jpg"
+              alt="iphone-mockup"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <section class="colored-section" id="testimonials">
+      <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item container-fluid">
+            <h2 class="testimonial-text">
+              “I will tell you how to become rich. Close the doors. Be fearful
+              when others are greedy. Be greedy when others are fearful.”
+            </h2>
+            <img
+              class="testimonial-image"
+              src="Images/warren buffett.png"
+              alt="Warren Buffett"
+            />
+            <em>Warren Buffett</em>
+          </div>
+
+          <div class="carousel-item active container-fluid">
+            <h2 class="testimonial-text">
+              An investment in knowledge pays the best interest.
+            </h2>
+            <img
+              class="testimonial-image"
+              src="Images/benjamamin.jpg"
+              alt="Benjamin Franklin"
+            />
+            <em>Benjamin Franklin</em>
+          </div>
+
+          <div class="carousel-item container-fluid">
+            <h2 class="testimonial-text">
+              Bottoms in the investment world don't end with four-year lows;
+              they end with 10- or 15-year lows.
+            </h2>
+            <img
+              class="testimonial-image"
+              src="Images/Jim Rogers.jpg"
+              alt="Jim Rogers"
+            />
+            <em>Jim Rogers</em>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#testimonial-carousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#testimonial-carousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+
+    <section class="colored-section" id="cta">
+      <h3 class="big-heading">Investment</h3>
+      <div class="row">
+        <div class="col-lg-6 correct flex">
+          <i class="fa-solid fa-check"></i>
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/i-RoPMfUkh4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="youtube-video"
+          ></iframe>
+        </div>
+
+        <div class="col-lg-6 wrong flex">
+          <i class="fa-solid fa-xmark"></i>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/9-kP_vWvyD8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+
+    <section class="white-section" id="pricing">
+      <h2 class="section-heading">Finance Calculators</h2>
+
+      <div class="row">
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h4>SIP</h4>
+            </div>
+
+            <div class="card-body">
+              <img class="icon-img" src="./Images/1x/1x/Asset 5.png" alt="" />
+              <a href="./sip-calculator.html">
+                <button type="button" class="btn btn-color btn-block">
+                  Find Now
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h4>Investment Calculator</h4>
+            </div>
+
+            <div class="card-body">
+              <img class="icon-img" src="./Images/1x/1x/Asset 6.png" alt="" />
+              <button type="button" class="btn btn-color btn-block">
+                Find Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-column col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h3>EMI</h3>
+            </div>
+
+            <div class="card-body">
+              <img class="icon-img" src="./Images/1x/1x/Asset 7.png" alt="" />
+              <button type="button" class="btn btn-color btn-block">
+                Find Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="white-section" id="footer">
+      <div class="footer-container">
+        <p>Team - Rear Hack</p>
+        <!-- <i class="social-icon fab fa-twitter"></i> -->
+        <!-- <i class="fa-brands fa-facebook"></i> -->
+        <!-- <i class="social-icon fab fa-instagram"></i> -->
+        <!-- <i class="social-icon fas fa-envelope"></i> -->
+        <p>© Copyright 2022 Investify</p>
+      </div>
+    </footer>
+  </body>
+</html>

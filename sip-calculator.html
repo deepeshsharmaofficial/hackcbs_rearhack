@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+ <html eng="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="SIP Calculator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>SIP Calculator</title>
+    <link rel="stylesheet" type="text/css" href="./sip-calculator.css">
+    <script src="./sip-calculator.js"></script> 
+  </head>
+
+ <body>
+
+  <!-- ------------------HEADER--------------- -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="./index.html">
+      <img
+        src="./Images/logo.png"
+        alt=""
+        width="40"
+        class="d-inline-block align-text-top"
+      />
+      Investify
+    </a>
+  </nav>
+
+
+ <div class="container">
+  <h1>SIP Calculator</h1>
+  <p>Calculate returns on your SIP investments.</p>
+
+<!---------------- CALCULATION ----------------> 
+
+<form>
+  <div class="calculation">
+    <div class="amount">
+      <label for="amount">Monthly Investment Amount (Rs.)</label><br>
+      <input type="text" id="principal" name="amount" placeholder="Amount" required></div>
+    
+    <div class="period">
+  <label for="period">Investment Period</label><br>
+      <input type="number" id="period" placeholder="5" required><span id="addon">Years</span> 
+      <br></div><br>
+    
+    <div class="interest">
+  <label for="interest">Expected Annual Returns (%)</label><br>
+      <input type="text" id="rate" name="amount" placeholder="6.5" required><br></div>
+    
+    <div class="frequency">
+  <label for="frequency">Adjust for Inflation ?</label><br>
+      <select id="freq">
+  <option value=12>Yes</option>
+  <option value=4>No</option>
+      </select><br><br></div>
+    
+    <button type=button onclick=maturity(); id="button">Submit</button>
+  
+    <table id="result" style="width: 100%;">
+  <thead>
+    <th>Summery</th>
+  </thead>
+  <tr>
+    <td>Expected Amount (Rs.)</td>
+    <td id='mv'></td>
+  </tr>
+  <tr>
+    <td>Amount Invested (Rs.)</td>
+    <td id="amntinvst"></td>
+  </tr>
+  <tr>
+    <td>Wealth Gain (Rs.)</td>
+    <td id="gain"></td>
+  </tr>
+</table> 
+  </div>
+
+ </body>
+</html>
